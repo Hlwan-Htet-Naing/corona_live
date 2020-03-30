@@ -13,8 +13,13 @@ function showByRow(current) {
     $("#"+current).css("fill","#fff");
 
     showData(current);
-};
+}
 
+function dateReformat(x) {
+    let arr = x.split("/");
+    let str = arr[1]+"."+arr[0]+"."+arr[2];
+    return str;
+}
 
 function worldCase(){
     $.get("https://corona.lmao.ninja/all",function (data) {
@@ -23,11 +28,13 @@ function worldCase(){
         $(".current-place").html("World");
         $(".world-deaths").html(data.deaths);
         $(".world-deaths-progress").css("width",getPercentage(data.deaths,data.cases));
+        $(".death-percentage").html(getPercentage(data.deaths,data.cases));
         $(".world-recovered").html(data.recovered);
         $(".world-recovered-progress").css("width",getPercentage(data.recovered,data.cases));
+        $(".recovered-percentage").html(getPercentage(data.recovered,data.cases));
         $(".world-active").html(data.active);
         $(".world-active-progress").css("width",getPercentage(data.active,data.cases));
-
+        $(".active-percentage").html(getPercentage(data.active,data.cases));
 
         // $(".world-active").html(data.active);
         // $(".world-updated").html(showTime(data.updated));
@@ -40,6 +47,10 @@ function worldCase(){
 $.get("https://corona.lmao.ninja/countries",function (data) {
 
     data.map(function (el) {
+        apiCountry.push(el.country.toLocaleLowerCase());
+
+        $(".county-list").append(`<option value="${el.country.toLocaleLowerCase()}" ${ el.country.toLowerCase() == "myanmar" ? "selected" : "" }>${el.country.toLocaleUpperCase()}</option>`);
+
         $(".list-table-body").append(`
         <tr onclick="showByRow('${el.country.toLocaleLowerCase()}')" class="row-detail">
             <td>${el.country}</td>
@@ -68,8 +79,162 @@ $(".custom-control-input").on("change",function () {
 
 
 
+let apiCountry = [];
+let myDonut = document.getElementById('myDonut').getContext('2d');
+let myDonutChart = new Chart(myDonut, {
+    type: 'doughnut',
+    data: {
+        labels: ['Deaths','Active','Recovered'], // x axis
+        datasets: [{
+            label: '# of Votes',
+            data: [], // y axis
+            backgroundColor: [
+                '#dc354560',
+                '#ffc10760',
+                '#28a74560',
+            ],
+            borderColor: [
+                '#dc354590',
+                '#ffc10790',
+                '#28a74590',
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display: false,
+                },
+                gridLines: {
+                    display:false
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    display: false //this will remove only the label
+                },
+                gridLines: {
+                    display:false
+                }
+            }]
+        },
+        legend: {
+            position: "right",
+            align: "middle",
+            labels: {
+                usePointStyle: true,
+                fontColor:"#3a3a3a",
+            }
+        },
+    }
+});
+let casesChart = document.getElementById('myLineCases').getContext('2d');
+let casesChartInt = new Chart(casesChart, {
+    type: 'line',
+    data: {
+        labels: [], // x axis
+        datasets: [
+            {
+                data:[],
+                label: 'Case Rate',
+                backgroundColor: '#ffc10760',
+                borderColor: '#ffc10790',
+                borderWidth:1,
+                tension :0,
+                pointStyle:'circle',
+                pointRadius:'3',
+                pointBackgroundColor:'#ffc107'
+            },
+        ],
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display: false,
+                    stepSize: 10,
+                },
+                gridLines: {
+                    display:false
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    display: false, //this will remove only the label
+                },
+                gridLines: {
+                    display:false
+                }
+            }]
+        },
+        legend: {
+            display:false,
+            align:"left",
+            labels: {
+                usePointStyle: true,
+                fontColor:"#fff",
+            }
+        },
+    }
+});
+let deathsChart = document.getElementById('myLineDeaths').getContext('2d');
+let deathsChartInt = new Chart(deathsChart, {
+    type: 'line',
+    data: {
+        labels: [], // x axis
+        datasets: [{
+            label: 'Deaths Rate',
+            data: [], // y axis
+            backgroundColor: '#dc354560',
+            borderColor: '#dc354590',
+            borderWidth:0,
+            tension :0,
+            pointStyle:'none',
+            pointRadius:'3',
+            pointBackgroundColor:'#dc3545'
+
+        }
+
+        ],
+
+
+    },
+    options: {
+
+        scales: {
+            yAxes: [{
+                ticks: {
+                    display: false,
+                    stepSize: 10,
+                },
+                gridLines: {
+                    display:false
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    display: false, //this will remove only the label
+                },
+                gridLines: {
+                    display:false
+                }
+            }]
+        },
+        legend: {
+            display:false,
+            align:"left",
+            labels: {
+                usePointStyle: true,
+                fontColor:"#fff",
+            }
+        },
+    }
+});
 
 function showData(x){
+
     $(".loader").show();
     $.get(`https://corona.lmao.ninja/countries/${x}`,function (data) {
 
@@ -88,47 +253,20 @@ function showData(x){
         $(".world-cases").html(data.cases);
         $(".world-deaths").html(data.deaths);
         $(".world-deaths-progress").css("width",getPercentage(data.deaths,data.cases));
+        $(".death-percentage").html(getPercentage(data.deaths,data.cases));
         $(".world-recovered").html(data.recovered);
         $(".world-recovered-progress").css("width",getPercentage(data.recovered,data.cases));
+        $(".recovered-percentage").html(getPercentage(data.recovered,data.cases));
         $(".world-active").html(data.active);
         $(".world-active-progress").css("width",getPercentage(data.active,data.cases));
+        $(".active-percentage").html(getPercentage(data.active,data.cases));
 
-        var ctx2 = document.getElementById('myDonut').getContext('2d');
-        var myDonut = new Chart(ctx2, {
-            type: 'doughnut',
-            data: {
-                labels: ['Deaths','Active','Recovered'], // x axis
-                datasets: [{
-                    label: '# of Votes',
-                    data: [data.deaths,data.active,data.recovered], // y axis
-                    backgroundColor: [
-                        '#dc3545',
-                        '#ffc107',
-                        '#28a745',
-                    ],
-                    borderColor: [
-                        '#dc3545',
-                        '#ffc107',
-                        '#28a745',
-                    ],
-                    borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        }
-                    }]
-                }
-            }
-        });
+
+        myDonutChart.data.labels = [`Death : ${data.deaths}`,`Active : ${data.active}`,`Recoverd : ${data.recovered}`];
+        myDonutChart.data.datasets[0].data = [data.deaths,data.active,data.recovered];
+        myDonutChart.update();
 
         $.get(`https://corona.lmao.ninja/v2/historical/${x}`,function (data) {
-
-
-
 
             let country = data.country;
             let deaths = data.timeline.deaths;
@@ -141,8 +279,9 @@ function showData(x){
 
             $(".detail-table-row").empty();
 
+            if(dates.length){
 
-            for(x in dates){
+                for(x in dates){
 
                 if(x == 10){
                     break;
@@ -150,109 +289,54 @@ function showData(x){
 
                 let currentCase,currentDeath,currentDate;
                 currentDate = dates[x];
-                chartDates.push(currentDate.replace("/20","").replace("/"));
+                chartDates.push(dateReformat(currentDate));
                 currentCase = cases[dates[x]] - cases[dates[Number(x)+1]] ;
                 chartCases.push(currentCase);
                 currentDeath = deaths[dates[x]] - deaths[dates[Number(x)+1]] ;
                 chartDeaths.push(currentDeath);
 
+                deathsChartInt.data.labels = chartDates;
+                casesChartInt.data.labels = chartDates;
+                deathsChartInt.data.datasets[0].data = chartDeaths;
+                casesChartInt.data.datasets[0].data = chartCases;
+
+                deathsChartInt.update();
+                casesChartInt.update();
+
+
 
                 $(".detail-table-row").append(`
                     <tr>
-                        <td>${currentDate}</td>
+                        <td>${dateReformat(currentDate)}</td>
                         <td>${currentCase}</td>
                         <td>${currentDeath}</td>
                     </tr>
-                
-                `);
+                    
+                    `);
+
 
             }
 
 
 
+            }else{
 
+                $(".detail-table-row").append(`
+                    <tr>
+                        <td colspan="3">Not Support in ${x}</td>
+                    </tr>
+                    
+                    `);
 
+                deathsChartInt.data.labels = [];
+                casesChartInt.data.labels = [];
+                deathsChartInt.data.datasets[0].data = [];
+                casesChartInt.data.datasets[0].data = [];
 
+                deathsChartInt.update();
+                casesChartInt.update();
 
-
-
-
-
-
-            console.log(Object.keys(deaths));
-            console.log(Object.values(deaths));
-
-            var ctx = document.getElementById('myLineDeaths').getContext('2d');
-            var myLine = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: chartDates, // x axis
-                    datasets: [{
-                        label: 'Deaths Rate',
-                        data: chartDeaths, // y axis
-                        backgroundColor: [
-                            '#dc354500',
-
-                        ],
-                        borderColor: [
-                            '#dc3545',
-
-                        ],
-                        borderWidth: 1
-                    }
-
-
-                    ],
-
-
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                    }
-                }
-            });
-
-            var ctx = document.getElementById('myLineCases').getContext('2d');
-            var myLine = new Chart(ctx, {
-                type: 'line',
-                data: {
-                    labels: chartDates, // x axis
-                    datasets: [{
-                            label: 'Case Rate',
-                            data: chartCases, // y axis
-                            backgroundColor: [
-
-                                '#ffc10700',
-
-                            ],
-                            borderColor: [
-
-                                '#ffc107',
-
-                            ],
-                            borderWidth: 1
-                        },
-
-
-                    ],
-
-
-                },
-                options: {
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }]
-                    }
-                }
-            });
+            }
 
 
 
@@ -260,6 +344,9 @@ function showData(x){
         });
 
         $(".loader").hide();
+
+        $(".county-list").val(x);
+
 
     }).fail(function () {
         alert(x.toUpperCase() +" not in range");
@@ -282,11 +369,5 @@ $(".map path").click(function () {
 });
 
 
-
-
-
 $("#myanmar").css("fill","#ffffff");
 showData("myanmar");
-
-
-

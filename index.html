@@ -60,11 +60,18 @@
                                 <div class="text-uppercase  font-weight-bold">
                                     Deaths : <span class="world-deaths text-danger font-weight-bolder"><i class="fa fa-spinner fa-pulse"></i></span>
                                 </div>
-                                <div class="h4 font-weight-bolder text-white">
-                                    <div class="progress mt-3 mb-0">
-                                        <div class="progress-bar progress-bar-striped bg-danger world-deaths-progress" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                <div class="row align-items-end">
+                                    <div class="col-9 pr-0">
+                                        <div class="progress mt-3 mb-0">
+                                            <div class="progress-bar progress-bar-striped bg-danger world-deaths-progress" role="progressbar" style="width: 0%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <small class="death-percentage text-danger text-right d-block">100%</small>
                                     </div>
                                 </div>
+
 
                             </div>
                         </div>
@@ -79,9 +86,15 @@
                                 <div class="text-uppercase  font-weight-bold">
                                     Recovered : <span class="world-recovered text-success font-weight-bolder"><i class="fa fa-spinner fa-pulse"></i></span>
                                 </div>
-                                <div class="h4 font-weight-bolder text-white">
-                                    <div class="progress mt-3 mb-0">
-                                        <div class="progress-bar progress-bar-striped bg-success world-recovered-progress" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+
+                                <div class="row align-items-end">
+                                    <div class="col-9 pr-0">
+                                        <div class="progress mt-3 mb-0">
+                                            <div class="progress-bar progress-bar-striped bg-success world-recovered-progress" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <small class="recovered-percentage text-success text-right d-block">0%</small>
                                     </div>
                                 </div>
 
@@ -97,9 +110,14 @@
                                 <div class="text-uppercase  font-weight-bold">
                                     Active : <span class="world-active text-warning font-weight-bolder"><i class="fa fa-spinner fa-pulse"></i></span>
                                 </div>
-                                <div class="h4 font-weight-bolder text-white">
-                                    <div class="progress mt-3 mb-0">
-                                        <div class="progress-bar progress-bar-striped bg-warning world-active-progress" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="row align-items-end">
+                                    <div class="col-9 pr-0">
+                                        <div class="progress mt-3 mb-0">
+                                            <div class="progress-bar progress-bar-striped bg-warning world-active-progress" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <small class="active-percentage text-warning text-right d-block">0%</small>
                                     </div>
                                 </div>
 
@@ -117,7 +135,7 @@
         <div class="col-md-4">
             <div class="result py-5 py-md-0">
                 <p class="text-primary small mb-0">Novel Coronavirus Strain</p>
-                <h3 class="result-title font-weight-bolder text-white">Myanmar</h3>
+                <h4 class="result-title font-weight-bolder text-white">Myanmar</h4>
                 <table class="table result-table d-none d-md-block text-white my-4 w-100">
                     <tr>
                         <td class="cases">cases</td>
@@ -208,9 +226,9 @@
                     </tr>
 
                 </table>
-                <a href="#detail" onclick="" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#detail-modal">
                     More Detail <i class="fa fa-chart-pie"></i>
-                </a>
+                </button>
                 <a href="#top" class="btn btn-outline-primary font-weight-bolder" onclick="worldCase()">
                     World <i class="fa fa-globe-americas"></i>
                 </a>
@@ -799,7 +817,7 @@
                             d="M673.8,170.17l5.82-7.72l6.99,3.23l4.75,1.27l5.82-5.34l-3.95-2.91l2.6-3.67l7.76,2.74l2.69,4.41l4.86,0.13l2.54-1.89l5.23-0.21l1.14,1.94l8.69,0.44l5.5-5.61l7.61,0.8l-0.44,7.64l3.33,0.76l4.09-1.86l4.33,2.14l-0.1,1.08l-3.14,0.09l-3.27,6.86l-2.54,0.25l-9.88,12.91l-10.09,4.45l-6.31,0.49l-5.24-3.38l-6.7,3.58l-6.6-2.05l-1.87-4.79l-12.5-0.88l-6.4-10.85l-3.11-0.2L673.8,170.17L673.8,170.17z" /><path
                             id="north korea"
                             d="M778.28,194.27l1.84,0.77l0.56,6.44l3.65,0.21l3.44-4.03l-1.19-1.06l0.14-4.32l3.16-3.82l-1.61-2.9l1.05-1.2l0.58-3l-1.83-0.83l-1.56,0.79l-1.93,5.86l-3.12-0.27l-3.61,4.26L778.28,194.27L778.28,194.27z" /><path
-                            id="south korea"
+                            id="korea"
                             d="M788.34,198.2l6.18,5.04l1.05,4.88l-0.21,2.62l-3.02,3.4l-2.6,0.14l-2.95-6.37l-1.12-3.04l1.19-0.92l-0.28-1.27l-1.47-0.66L788.34,198.2L788.34,198.2z" /><path
                             id="kazakhstan"
                             d="M576.69,188.62l4.1-1.75l4.58-0.16l0.32,7h-2.68l-2.05,3.34l2.68,4.45l3.95,2.23l0.36,2.55l1.45-0.48l1.34-1.59l2.21,0.48l1.11,2.23h2.84v-2.86l-1.74-5.09l-0.79-4.13l5.05-2.23l6.79,1.11l4.26,4.29l9.63-0.95l5.37,7.63l6.31,0.32l1.74-2.86l2.21-0.48l0.32-3.18l3.31-0.16l1.74,2.07l1.74-4.13l14.99,2.07l2.52-3.34l-4.26-5.25l5.68-12.4l4.58,0.32l3.16-7.63l-6.31-0.64l-3.63-3.5l-10,1.16l-12.88-12.45l-4.54,4.03l-13.77-6.25l-16.89,8.27l-0.47,5.88l3.95,4.61l-7.7,4.35l-9.99-0.22l-2.09-3.07l-7.83-0.43l-7.42,4.77l-0.16,6.52L576.69,188.62L576.69,188.62z" /><path
@@ -974,44 +992,121 @@
         </div>
     </div>
 </div>
-<div class="container" id="detail">
-    <div class="row min-vh-100 py-5">
-        <div class="col-12">
-            <h4 class="chart-title text-white font-weight-bolder mb-0">Cases History in <span class="chart-current-country">Current</span></h4>
-            <div class="hr my-4"></div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="bg-white">
-                <table class="detail-table table table-hover table-responsive-sm">
-                    <thead>
-                    <tr>
-                        <th>Date</th>
-                        <th>Cases</th>
-                        <th>Deaths</th>
-                    </tr>
-                    </thead>
-                    <tbody class="detail-table-row">
 
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="chart-container">
-                <canvas id="myLineDeaths"></canvas>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade " id="detail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-body bg-dark">
+                <div class="container" id="detail">
+                    <div class="row">
+                        <div class="px-0 px-md-2 col-12 mb-4">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="chart-title text-white font-weight-bolder ">Cases History in <span class="result-title">Current</span></h4>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="px-0 px-md-2 col-12 col-md-6">
+                            <div class="card mb-4 d-block d-md-none">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <p class="text-primary font-weight-bolder mb-0">
+                                                <span class="world-cases"></span> Cases
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="" id="" class="form-control county-list" onchange="showByRow(this.value)">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card shadow mb-4">
+                                <div class="card-body">
+                                    <div class="donut-container">
+                                        <canvas id="myDonut" ></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card overflow-hidden shadow mb-4">
+
+                                <p class="font-weight-bolder text-uppercase text-warning m-3">
+                                    Daily Case
+                                </p>
+                                <div class="chart-container ">
+                                    <canvas id="myLineCases"></canvas>
+                                </div>
+                            </div>
+
+                            <div class="card overflow-hidden shadow mb-4">
+                                <p class="font-weight-bolder text-uppercase text-danger m-3">
+                                    Daily Deaths
+                                </p>
+                                <div class="chart-container ">
+                                    <canvas id="myLineDeaths"></canvas>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="px-0 px-md-2 col-12 col-md-6">
+                            <div class="card mb-4 d-none d-md-block">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <p class="text-primary font-weight-bolder mb-0">
+                                                <span class="world-cases"></span> Cases
+                                            </p>
+                                        </div>
+                                        <div class="col-6">
+                                            <select name="" class="form-control county-list" onchange="showByRow(this.value)">
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow rounded overflow-hidden">
+                                <table class="detail-table mb-0 table table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Cases</th>
+                                        <th>Deaths</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody class="detail-table-row">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
 
             </div>
-            <div class="chart-container">
-                <canvas id="myLineCases"></canvas>
 
-            </div>
-            <div class="Donut-container">
-                <canvas id="myDonut" ></canvas>
 
-            </div>
+
         </div>
     </div>
 </div>
+
+
 
 
 <script src="js/jquery-3.4.1.min.js"></script>
@@ -1020,13 +1115,14 @@
 <script src="js/dataTables.bootstrap4.min.js"></script>
 <script src="js/Chart.min.js"></script>
 <script src="js/app.js"></script>
-
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-162052455-2"></script>
 <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-
-
-
-
+    gtag('config', 'UA-162052455-2');
 </script>
 
 </body>

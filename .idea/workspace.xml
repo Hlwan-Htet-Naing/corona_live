@@ -1,7 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63830287-bdaf-45d4-b06e-f5b0ef3cc7cc" name="Default Changelist" comment="" />
+    <list default="true" id="63830287-bdaf-45d4-b06e-f5b0ef3cc7cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/corona.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/corona.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Archive.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Archive.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/World_map_-_low_resolution.svg" beforeDir="false" afterPath="$PROJECT_DIR$/asset/World_map_-_low_resolution.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/all.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/all.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/brands.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/brands.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/brands.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/brands.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fontawesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fontawesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fontawesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fontawesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/regular.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/regular.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/regular.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/regular.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/solid.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/solid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/solid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/solid.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/svg-with-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/svg-with-js.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/svg-with-js.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/svg-with-js.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/v4-shims.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/v4-shims.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/v4-shims.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/v4-shims.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fav.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/fav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/fav.psd" beforeDir="false" afterPath="$PROJECT_DIR$/img/fav.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/site-ss.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/site-ss.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/site-ss.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/site-ss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Chart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/dataTables.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-brands-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-brands-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-brands-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-brands-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-regular-400.eot" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-regular-400.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-regular-400.woff" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-regular-400.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-solid-900.eot" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-solid-900.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-solid-900.woff" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webfonts/fa-solid-900.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/webfonts/fa-solid-900.woff2" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +81,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ZlekTwnU7Fj9ilnhC3aKwE1rqT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,10 +115,23 @@
       <workItem from="1585418254084" duration="838000" />
       <workItem from="1585448542894" duration="9544000" />
       <workItem from="1585509355625" duration="2815000" />
+      <workItem from="1585547299178" duration="15470000" />
+      <workItem from="1585572695904" duration="59000" />
+      <workItem from="1585572759558" duration="5219000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="569" y="127" width="782" height="825" key="find.popup" timestamp="1585561599417">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="569" y="127" width="782" height="825" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1585561599417" />
+    <state x="625" y="255" key="run.anything.popup" timestamp="1585558390079">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state x="625" y="255" key="run.anything.popup/0.23.1920.1001@0.23.1920.1001" timestamp="1585558390079" />
   </component>
 </project>
